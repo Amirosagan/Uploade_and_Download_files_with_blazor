@@ -1,0 +1,96 @@
+﻿@page "/"
+@using Uplode_files.Services
+@inject IFileUpload fileUpload
+
+<PageTitle>Uplode your files</PageTitle>
+
+<div>
+    <div class="form-grope">
+        <InputFile OnChange="OnInputFileChange" multiple />
+        <button class="btn btn-sm btn-success" @onclick="UplodeFiles">Uplode</button>
+
+    </div>
+    <br />
+    <label>@labelText</label>
+    <br />
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-info col-4" 
+             role="progressbar" 
+             style="width: @(progresspres)%" 
+             aria-valuenow="@progresspres" 
+             aria-valuemin="0" 
+             aria-valuemax="100">@progresspres %</div>
+    </div>
+    <br />
+    @if(privewImages.Count>0)
+    {
+<h3>Selected Files</h3>
+<div class="card">
+    <div class="row align-items-start">
+        @foreach (var image in privewImages)
+        {
+        <div class="col-2">
+            <img src="@image" class="rounded float-left" width="100" height="100"  />
+        </div>
+        }
+    </div>
+</div>
+
+    }
+
+</div>
+
+
+@code {
+    IReadOnlyList<IBrowserFile> browserFiles;
+
+    private string labelText = "";
+    private int progresspres = 0;
+
+    private IList<string> privewImages = new List<string>();
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs eve)
+    {
+        browserFiles = new List<IBrowserFile>();
+        browserFiles = eve.GetMultipleFiles();
+        privewImages.Clear();
+        foreach (var file in browserFiles)
+        {
+            var imageURL = await fileUpload.GenratePreviewURL(file);
+            privewImages.Add(imageURL);
+        }
+
+    }
+
+    private async Task UplodeFiles()
+    {
+        try
+        {
+            if(browserFiles is not null && browserFiles.Count > 0)
+            {
+                var uplodaoaded = 0;
+
+                
+
+                foreach (var file in browserFiles)
+                {
+
+
+                    await fileUpload.UploadFile(file);
+                    uplodaoaded++;
+                    progresspres = (uplodaoaded / browserFiles.Count) * 100;
+                }
+
+
+                labelText = "Uplode of " + browserFiles.Count + " files successful";
+
+            }
+        }
+        catch (Exception ex)
+        {
+
+            labelText = $"Uploade failed due to {ex.Message}";
+        }
+
+    }
+}

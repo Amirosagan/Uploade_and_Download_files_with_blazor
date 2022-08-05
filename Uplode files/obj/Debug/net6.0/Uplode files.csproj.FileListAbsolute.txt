@@ -1,0 +1,27 @@
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\appsettings.Development.json
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\appsettings.json
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\Uplode files.staticwebassets.runtime.json
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\Uplode files.exe
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\Uplode files.deps.json
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\Uplode files.runtimeconfig.json
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\Uplode files.dll
+D:\first steps c#\Uplode files\Uplode files\bin\Debug\net6.0\Uplode files.pdb
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.csproj.AssemblyReference.cache
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.GeneratedMSBuildEditorConfig.editorconfig
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.AssemblyInfoInputs.cache
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.AssemblyInfo.cs
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.csproj.CoreCompileInputs.cache
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.MvcApplicationPartsAssemblyInfo.cache
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.RazorAssemblyInfo.cache
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.RazorAssemblyInfo.cs
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\staticwebassets.build.json
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\staticwebassets.development.json
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\scopedcss\bundle\Uplode files.styles.css
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\scopedcss\projectbundle\Uplode files.bundle.scp.css
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.dll
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\refint\Uplode files.dll
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.pdb
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\Uplode files.genruntimeconfig.cache
+D:\first steps c#\Uplode files\Uplode files\obj\Debug\net6.0\ref\Uplode files.dll
